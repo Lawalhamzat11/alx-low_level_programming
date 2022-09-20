@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * reset_to _98 - Take a ponter to an int and updates the value to 98
+ * reset_to_98 - Take a ponter to an int and updates the value to 98
  *
  * @n: The pointer to an int.
  */
