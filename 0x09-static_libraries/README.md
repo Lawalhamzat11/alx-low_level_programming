@@ -1,0 +1,1 @@
+Alx Static Library Task
