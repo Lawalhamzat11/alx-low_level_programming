@@ -4,6 +4,7 @@
  * @s1: first string to be concatenated
  * @s2: string to be concantenated by n bytes
  * @n: bytes of s2 to be concantenated
+ * Return: new allocated memoey of the concanted string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -20,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!new)
 		return (NULL);
 	i = 0;
-	while(s1[i])
+	while (s1[i])
 	{
 		new[i] = s1[i];
 		i++;
