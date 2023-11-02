@@ -8,11 +8,14 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *new = 0;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	new = (void *)malloc(nmemb * size);
+	new = malloc(nmemb * size);
 	if (new == NULL)
 		return (NULL);
+	for (i = 0; i < nmemb; i++)
+		*((char *)(new) + i) = 0;
 	return (new);
 }
