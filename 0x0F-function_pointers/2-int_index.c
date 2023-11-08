@@ -21,5 +21,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 			break;
 		}
 	}
-	return ((i >= 19) ? (-1) : (i));
+	return ((i > 19) ? (-1) : (i));
 }
