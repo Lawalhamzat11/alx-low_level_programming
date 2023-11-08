@@ -18,8 +18,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	{
 		if (cmp(array[i]))
 		{
-			break;
+			return (i);
 		}
 	}
-	return ((i > 19) ? (-1) : (i));
+	return (-1)
 }
