@@ -21,7 +21,5 @@ int (*get_op_func(char *s))(int, int)
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
 	}
-	printf("Error\n");
-	exit(99);
-
+	return (NULL);
 }

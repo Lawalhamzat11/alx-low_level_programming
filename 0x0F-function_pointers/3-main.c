@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 	int result = 0;
 	int num1, num2;
 	char *op;
+	int (*fun)(int, int);
 
 	if (argc != 4)
 	{
@@ -19,7 +20,13 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	op = argv[2];
-	result = get_op_func(op)(num1, num2);
+	fun = get_op_func(op);
+	if (!op)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	result = fun(num1, num2);
 	printf("%d\n", result);
 	return (0);
 
