@@ -27,13 +27,4 @@ list_t *add_node(list_t **head, const char *str)
 
 }
 
-int _strlen(const char *str)
-{
-	int n;
-	n = 0;
-	while (str[n] != '\0')
-	{
-		n++;
-	}
-	return (n);
-}
+
